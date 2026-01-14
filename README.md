@@ -11,6 +11,7 @@ RunService.RenderStepped:Connect(function()
 		end
 	end
 end)
+
 game.Players.PlayerAdded:Connect(function(player)
 	player.CharacterAdded:Connect(function(char)
 		for _, part in pairs(char:GetChildren()) do
@@ -23,6 +24,7 @@ game.Players.PlayerAdded:Connect(function(player)
 			end
 		end
 	end)
+
 end)
 local RunService = game:GetService("RunService")
 local camera = workspace.CurrentCamera
